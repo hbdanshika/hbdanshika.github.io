@@ -13,6 +13,10 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		
 		 <link rel="icon" href="https://user-images.githubusercontent.com/119351643/208905587-978936d1-5618-4e61-a441-f43737ae3134.jpg" type="image/gif" sizes="16x16">
+		
+		  <!-- visit counting  -->
+    		<script async src="https://api.countapi.xyz/hit/hbdanshika/6842923b-0eac-46ef-bb45-b4aca3e5f569?callback=websiteVisits"></script>
+		
 	</head>
 	<body class="landing">
 
@@ -205,6 +209,12 @@
 				  audio.play();
 				}
 			  </script>
+				
+	<script>		
+	function websiteVisits(response) {
+    		document.querySelector("#visits").textContent = response.value;
+	}		
+	</script>		
 
 	</body>
 </html>
